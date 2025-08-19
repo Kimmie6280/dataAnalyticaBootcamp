@@ -1,0 +1,67 @@
+
+How many payment transactions were greater than$5.00? ​(Use payment table, COUNT and WHERE)
+
+select count(amount) from payment where amount > 5.00
+
+How many unique districts are our customers from?​ (Use address table, COUNT and DISTINCT)
+
+select count(DISTINCT district) from address 
+
+
+Retrieve the list of names from those distinct districts
+
+select DISTINCT district from address 
+
+
+How many films have the word Truman somewhere int he title?​ (Use film table, LIKE)
+
+select title from film where title like '%Truman%';
+
+-------------------------------------------------------------------------------------------------------------
+
+Write a select statement to return all columns and rows from the customer table.
+
+select * from customer;
+
+
+Write a query to select first name, last name, and email from the customer table.
+
+select first_name,last_name,email from customer;v
+
+Write a query to return all rows and columns from the film table.
+
+select * from film;
+
+
+Write a query to return unique rows from the release_year column in the film table.
+
+select DISTINCT release_year from film;
+
+
+Write a query to return unique rows from the rental_rate column in the film table.
+
+select DISTINCT rental_rate from film;
+
+A customer left us some feedback about our store. Write a query to find her email address – for Nancy Thomas.
+
+select email from customer where first_name = 'Nancy';
+
+We’re trying to find a customer located at a certain address: ‘259 Ipoh Drive’ – can you find their phone number?
+
+select phone from address where address = '259 Ipoh Drive';
+
+Write a query from the customer table where store_id is 1 and address_id is greater than 150.
+
+select * from customer where store_id > 1 and address_id > 150
+
+Write a query from the payment table where the amount is either 4.99 or 1.99.
+
+select * from payment where amount = 4.99 or amount = 1.99
+
+
+Write a query to return a list of transitions from the payment table where the amount is greater than 5.
+
+select * from payment where amount > 5
+
+
+
