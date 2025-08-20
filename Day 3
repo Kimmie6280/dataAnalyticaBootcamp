@@ -36,3 +36,48 @@ limit 5
 Correct answer
   select min(amount) , customer_id from payment group by customer_id order by customer_id limit 5
 
+__________________________________________________________________________________________________
+
+Select acts on fields
+from acts on tables 
+where actis on records - filter global
+group by acts on records - filter local
+having acts on groups - filter local
+order by acts on records
+limit acts records
+
+
+__________________________________________________________________________________________________
+
+Having filter your query by elimiting rows that dont meat a specific condition
+
+Having Syntax
+
+Select columnlist
+from tablelist
+where condition
+group by columnlist
+having condition
+order by columnlust
+
+__________________________________________________________________________________________
+
+What question does this query answer
+
+select customer_id, sum(amount) from payment group by customer_id
+
+select customer_id, sum(amount) from payment group by customer_id having sum(amount) > 200;
+
+
+
+select store_id, count(customer_id) from customer group by store_id;
+
+  How many unique customers went into a store
+
+select store_id, count(customer_id) from customer group by store_id having count(customer_id) > 300;
+
+  how many customers went into a store with a count under 300
+
+_____________________________________________________________________________________________________________
+
+
