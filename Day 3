@@ -80,4 +80,4 @@ select store_id, count(customer_id) from customer group by store_id having count
 
 _____________________________________________________________________________________________________________
 
-
+Timestamp data tracks time
