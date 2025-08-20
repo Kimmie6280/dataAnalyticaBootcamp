@@ -1,1 +1,28 @@
 Topics Covered: Count, Limit, Between, In, Groupby and Having Joins and Unions
+
+
+Group By command which tells the database to separate your data into groups, which can then be aggregated independently.
+
+Group by needs to be tagged with an aggrate function
+
+With group by you need the entity you are grouping by in the select statement 
+
+Basic grouping by customer ID
+
+  Select customer_id from payment group by customer_id;
+
+Group By Problem 1:
+
+2 parts: 
+
+1.who handled the most payments
+2.how much was the total of those payments
+
+select count(payment_id), staff_id from payment group by staff_id
+
+
+
+Group by problem 2:
+
+a company needs to find 5 customers who spend the least
+
