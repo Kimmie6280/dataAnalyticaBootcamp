@@ -12,17 +12,27 @@ Basic grouping by customer ID
   Select customer_id from payment group by customer_id;
 
 Group By Problem 1:
-
 2 parts: 
-
 1.who handled the most payments
 2.how much was the total of those payments
 
-select count(payment_id), staff_id from payment group by staff_id
+  select count(payment_id), staff_id from payment group by staff_id
 
 
 
-Group by problem 2:
+Group by problem 2: A company needs to find 5 customers who spend the least
 
-a company needs to find 5 customers who spend the least
+  select min(amount) , customer_id from payment group by customer_id order by customer_id limit 5
+
+Incorrect
+
+first find customer ids
+then find sum of amounts
+
+group by customer id
+order by sum amounts 
+limit 5
+
+Correct answer
+  select min(amount) , customer_id from payment group by customer_id order by customer_id limit 5
 
