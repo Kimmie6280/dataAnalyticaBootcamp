@@ -1,0 +1,5 @@
+select min(amount) from payment;
+
+Select avg(amount)from payment;
+
+select round(avg(amount)) from payment
