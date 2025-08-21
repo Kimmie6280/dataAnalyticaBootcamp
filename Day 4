@@ -1,0 +1,38 @@
+Math functions
+
+Addition (+): Adds two numeric values.
+Subtraction (-): Subtracts one numeric value from another.
+Multiplication (*): Multiplies two numeric values.
+Division (/): Divides one numeric value by another.
+Modulo (% or MOD()): Returns the remainder of a division operation
+
+___________________________________________________________________
+
+Joins and unions 
+
+Bring together 2 data data structures 
+
+
+join combines rows from 2 or more tables based on a column they have incommon
+
+Things needed:
+
+Primary Key - unique identifier for a row
+
+Foregin key - a refrence from column to another in a different table
+
+_________________________________________________________________________
+
+How to do joins:
+
+Task 1: Identify tables you want to join
+Task 2: choose join type
+Task 3: Specify the JOIN Condition:
+
+we are not creating a new table 
+
+Types of joins
+  Inner
+  Left
+  Right
+  Outer
