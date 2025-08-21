@@ -36,3 +36,18 @@ Types of joins
   Left
   Right
   Outer
+________________________________________________________________________
+
+First join:
+
+select * from customer inner join payment
+on customer.customer_id = payment.customer_id limit 10;
+
+
+customer has the PK and payment has the FK
+
+I am joining the customer onto the payment table
+
+This query shows you the first 10 records of customers matched with their payments. Customers without payments are excluded.The tables aren’t merged permanently.
+
+The query joins them together on the fly to show you a combined view.
