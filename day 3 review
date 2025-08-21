@@ -1,0 +1,15 @@
+
+select * from film;
+
+select distinct(rating) , avg(rental_rate) from film group by rating
+
+select max(release_year) from film
+
+  SELECT distinct(release_year) from film
+
+select 
+extract(day from last_update) as date_column,
+extract(month from last_update) as month_column 
+from film;
+
+select distinct(rating) , avg(rental_rate) from film group by rating
