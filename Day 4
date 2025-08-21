@@ -53,4 +53,64 @@ This query shows you the first 10 records of customers matched with their paymen
 The query joins them together on the fly to show you a combined view.
 _________________________________________________________________________
 
-Full Outer Join
+join 2 tables film and inventory
+
+film pk = film_id
+
+invetory - fk film_id
+
+
+
+
+select  film.film_id, 
+		film.title,
+		inventory_id 
+		from film left outer join inventory on inventory.film_id = film.film_id
+		
+		where inventory.film_id is null order by film.film_id;
+
+________________________________________________________________________
+
+Union and Union all
+
+The UNION operator is used to combine the result-set of two or more SELECT statements. but removed dups union all does not
+
+
+Join the film to the film_actor table.
+
+film - pk film_id
+ Actor
+
+select * from film  join film_actor on film.film_id = film_actor.film_id
+
+Join the actor table to the film_actor table.
+
+select * from film_actor  join film on film.film_id = film_actor.film_id
+
+Join the actor, film_actor, and film tables together (multiple joins!).
+
+
+
+What is the difference between UNION and UNION ALL and under what condition(s) would you use each version?
+
+________________________________________________________________________________________________________
+
+Join the film to the film_actor table.
+
+film - pk film_id
+ Actor
+
+select * from film  join film_actor on film.film_id = film_actor.film_id
+
+Join the actor table to the film_actor table.
+
+select * from film_actor  join film on film.film_id = film_actor.film_id
+
+Join the actor, film_actor, and film tables together (multiple joins!).
+
+
+
+What is the difference between UNION and UNION ALL and under what condition(s) would you use each version?
+
+
+
