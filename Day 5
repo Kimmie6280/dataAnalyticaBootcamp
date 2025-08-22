@@ -1,0 +1,10 @@
+Sub-queries
+
+a query inside the query
+
+outer query second task first task is the inner task 
+
+find the avg rental rate then find the higest value
+
+select title,rental_rate from film where (select avg(rental_rate) from film ) > 2.98;
+ subquery placed on right side of comparision operator
