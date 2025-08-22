@@ -8,3 +8,9 @@ find the avg rental rate then find the higest value
 
 select title,rental_rate from film where (select avg(rental_rate) from film ) > 2.98;
  subquery placed on right side of comparision operator
+------------------------------------------------------------------------------------------
+
+self join
+
+select a.first_name, a.last_name, b.first_name, b.last_name
+from customer as a , customer as b where a.first_name = b.last_name limit 20
