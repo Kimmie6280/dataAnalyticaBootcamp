@@ -108,6 +108,13 @@ select * from film_actor  join film on film.film_id = film_actor.film_id
 
 Join the actor, film_actor, and film tables together (multiple joins!).
 
+actor pk actor_id
+film pk film_id
+film_actor film_id actor_id
+
+select * from film_actor as t1 inner join
+film as t2 on t1.film_id = t2.film_id
+inner join actor as t3 on t1.actor_id = t3.actor_id;
 
 
 What is the difference between UNION and UNION ALL and under what condition(s) would you use each version?
