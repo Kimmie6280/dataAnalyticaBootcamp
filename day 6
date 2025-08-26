@@ -1,0 +1,19 @@
+
+
+create table weblinks(
+nameID serial unique primary key,
+url varchar(255) not null,
+name varchar(255) not null,
+description varchar(255) not null
+);
+
+select * from weblinks;
+
+insert into weblinks(url, name, description) values
+('www.Youtube.com', 'YouTube','Watch videos'),
+('www.chatgbt.com', 'ChatGBT','I will take your job')
+
+
+update weblinks set description = 'For all your shoping needs' where url = 'www.amazon.com'
+
+update weblinks se
